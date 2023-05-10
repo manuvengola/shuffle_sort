@@ -1,0 +1,160 @@
+body {
+  text-align: center;
+  color: #333333;
+}
+
+main {
+  flex-direction: column-reverse;
+  background: transparent;
+}
+
+header {
+  background: #333333;
+  color: #ffff;
+  padding: 15px 0;
+}
+
+footer {
+  background: transparent;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  max-width: 90%;
+  width: 100%;
+  margin: auto;
+  background: transparent;
+  padding-left: 0px;
+}
+
+li {
+  list-style: none;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 5px;
+  color: #333;
+  padding: 15px 0;
+  font-size: 24px;
+  background: #efefef;
+}
+
+.btn-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 16px 0 24px;
+}
+
+.btn-wrapper button {
+  margin: 0;
+  max-width: 35%;
+  font-size: 14px;
+  background: #72c3dc;
+  border: 1px solid #2b8ead;
+  border-radius: 5px;
+  box-shadow: 0px 5px 0px #2b8ead;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 0;
+  margin-top: 25px;
+  text-shadow: 1px 1px 1px #2b8ead;
+  transition: All 250ms ease;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+}
+
+button:active {
+  top: 5px;
+  box-shadow: none;
+}
+
+[data-item="1"],
+[data-item="8"] {
+  border-left: 5px solid #6f98a8;
+}
+
+[data-item="2"],
+[data-item="4"] {
+  border-left: 5px solid #2b8ead;
+}
+
+[data-item="3"],
+[data-item="5"],
+[data-item="9"] {
+  border-left: 5px solid #2f454e;
+}
+
+[data-item="6"],
+[data-item="7"] {
+  border-left: 5px solid #bfbfbf;
+}
+
+@media screen and (min-width: 960px) {
+  main {
+    background: #efefef;
+    padding-top: 50px;
+    flex-direction: row;
+  }
+
+  header,
+  footer {
+    padding: 20px 0;
+    background: #efefef;
+    color: #333333;
+  }
+
+  footer {
+    font-style: italic;
+  }
+
+  ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 70%;
+    align-items: center;
+    padding-left: 40px;
+  }
+
+  li {
+    font-size: 64px;
+    color: #fff;
+    width: calc(100% / 3);
+    margin: 0;
+    padding: 45px 0;
+    border: none !important;
+  }
+
+  [data-item="1"],
+  [data-item="8"] {
+    background: #6f98a8;
+  }
+
+  [data-item="2"],
+  [data-item="4"] {
+    background: #2b8ead;
+  }
+
+  [data-item="3"],
+  [data-item="5"],
+  [data-item="9"] {
+    background: #2f454e;
+  }
+
+  [data-item="6"],
+  [data-item="7"] {
+    background: #bfbfbf;
+  }
+
+  .btn-wrapper {
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .btn-wrapper button {
+    margin: 20px 0;
+  }
+}
